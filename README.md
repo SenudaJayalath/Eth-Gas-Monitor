@@ -4,8 +4,8 @@ This application helps to monitor gas fees in any given moment. It can be used t
 # Table of contents
 1. [Problem Statement and Solution](#problem)
 2. [How to Get Started](#started)
-  i. [Prerequisites](#prerequisites)
-  ii. [Steps to run the project](#steps)
+  1. [Prerequisites](#prerequisites)
+  2. [Steps to run the project](#steps)
 4. [Desired Output](#output)
 5. [ Possible Error Messages ](#errors)
 

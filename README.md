@@ -4,7 +4,8 @@ This application helps to monitor gas fees in any given moment. It can be used t
 # Table of contents
 1. [Problem Statement and Solution](#problem)
 2. [How to Get Started](#started)
-3. [How to install and run this tool](#how-to)
+  i. [Prerequisites](#prerequisites)
+  ii. [Steps to run the project](#steps)
 4. [Desired Output](#output)
 5. [ Possible Error Messages ](#errors)
 
@@ -59,11 +60,11 @@ NOTE: All the gas prices are returned in **Gwei**
  
  ## How to Get Started  <a name="started"/>
  
- ### Prerequisites
+ ### Prerequisites <a name="prerequisites"/>
  
  - Docker and Docker compose should be installed. (See [here](https://docs.docker.com/compose/install/) for more info)
 
-### Steps to run the project
+### Steps to run the project <a name="steps"/>
 
 - Clone this project
 - Create a free API key by creating a new account in EtherScan through this [link](https://docs.etherscan.io/getting-started/creating-an-account)

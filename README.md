@@ -6,8 +6,10 @@ This application helps to monitor gas fees in any given moment. It can be used t
 2. [How to Get Started](#started)
     1. [Prerequisites](#prerequisites)
     2. [Steps to run the project](#steps)
-4. [Desired Output](#output)
-5. [ Possible Error Messages ](#errors)
+4. [Technical Choices made in the application](#technical)
+    1. [Choosing a Data Source](#source)
+    2. [Choosing a  Database](#db)
+    3. [Choosing Server Type](#server)
 
 
 ## Problem Statement and Solution <a name="problem"/>
@@ -75,18 +77,18 @@ NOTE: All the gas prices are returned in **Gwei**
 
  _Other environment variables in `docker-compose.yml` file can also be passed the same way the API key was passed._
  
- ## Technical Choices made in the application
+ ## Technical Choices made in the application <a name="technical"/>
  
- ### Choosing a Data Source
+ ### Choosing a Data Source <a name="source"/>
  
  EtherScan and EtherGas station are the two famous sources of data for extracting gas fees. Out of them I have chosen to use EtherScan in this application due to the following reasons
  - EtherScan documentation is very clear.
  - EtherScan would be the ideal data source if I were to improve this application in the future by adding more functionality, becuase it provides many endpoints for different uses. On the other hand EtherGasStation has only one endpoint.
 
-### Choosing a  Database
+### Choosing a  Database <a name="db"/>
 
 I have decided to use a relational DB(MYSQL) in this application. Although I have only one table in the database it is easier to query data if I used a SQL database like MYSQL. Also since I am using well-structured, more or less constant data - an SQL database was the best choise.
 
-### Choosing Server Type
+### Choosing Server Type <a name="server"/>
 
 The user only needs to receive data when he/she requests gas prices. Therefore, there is no use in implementing a websocket server. Therefore, I have chosen to implement a REST server.

@@ -1,2 +1,7 @@
 # Eth-Gas-Monitor
-This is a tool used to measure current and historical gas prices on Ethereum so as to reduce costs working on Ethereum
+This application helps to monitor gas fees in any given moment. It can be used to reduce gas fees spent on the Ethereum network
+
+
+//Things to do
+    No data in checking for average
+    How to hide keys

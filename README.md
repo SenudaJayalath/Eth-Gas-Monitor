@@ -1,7 +1,15 @@
 # Eth-Gas-Monitor
 This application helps to monitor gas fees in any given moment. It can be used to reduce gas fees spent on the Ethereum network
 
-## Problem Statement and Solution
+# Table of contents
+1. [Problem Statement and Solution](#problem)
+2. [How to Get Started](#started)
+3. [How to install and run this tool](#how-to)
+4. [Desired Output](#output)
+5. [ Possible Error Messages ](#errors)
+
+
+## Problem Statement and Solution <a name="problem"/>
 
 We need to pay a service fee called gas fees when doing transactions on Ethereum. The price of gas is very volatile and depends on the current network usage. Therefore, it is really important to be able to get to know the current gas price and compare with historical prices in order to reduce the cost of running operation on Ethereum.
 
@@ -49,7 +57,7 @@ NOTE: All the gas prices are returned in **Gwei**
   `{ "error": false, "message":{"averageGasPrice": 56, "fromTime": 1633285779, "toTime": 1633112979} }`
  
  
- ## How to Get Started
+ ## How to Get Started  <a name="started"/>
  
  ### Prerequisites
  

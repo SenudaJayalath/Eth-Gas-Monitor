@@ -50,6 +50,21 @@ This application uses Gas Tracker APIs offered by Etherscan to periodically get 
  
  ## How to Get Started
  
+ ### Prerequisites
+ 
+ - Docker and Docker compose should be installed. (See [here](https://docs.docker.com/compose/install/))
+
+### Steps to run the folder
+
+- Clone this project
+- Create a free API key by creating a new account in EtherScan through this [link](https://docs.etherscan.io/getting-started/creating-an-account)
+- Create a file called `.env_file` in the root directory and place your API key as follows,  
+   `APP_KEY="some_api_key"`
+- Run the project with the following command  
+   `docker-compose up -d --build`
+
+ _Other environment variables in `docker-compose.yml` file can also be passed the same the API key was passed._
+ 
  ## Technical Choices made in the application
  
  ### Choosing a Data Source

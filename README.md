@@ -3,9 +3,11 @@ This application helps to monitor gas fees in any given moment. It can be used t
 
 ## Problem Statement and Solution
 
-We need to pay a service fee called gas fees when doing transactions on Ethereum. The price of gas is very volatile and depends on the current network usage. Therefore, it is really important to be able to get to know the current gas price and compare with historical prices in order to reduce cost of running operation on Ethereum.
+We need to pay a service fee called gas fees when doing transactions on Ethereum. The price of gas is very volatile and depends on the current network usage. Therefore, it is really important to be able to get to know the current gas price and compare with historical prices in order to reduce the cost of running operation on Ethereum.
 
 This application uses Gas Tracker APIs offered by Etherscan to periodically get gas prices and stores them in a database. This API can be used to get current gas fees or any historical gas fees requested by the user.
+
+NOTE: All the gas prices are returned in **Gwei**  
 
 ### Endpoints
 
@@ -44,17 +46,16 @@ This application uses Gas Tracker APIs offered by Etherscan to periodically get 
   `{ "error": true, "message": <some error-string highlighting the issue> }`  
   
   In case of a successful result,  
-  `{ "error": false, "message": <successful valid JSON-object with average
-   gasPrice (see below for sample object)> }`
+  `{ "error": false, "message":{"averageGasPrice": 56, "fromTime": 1633285779, "toTime": 1633112979} }`
  
  
  ## How to Get Started
  
  ### Prerequisites
  
- - Docker and Docker compose should be installed. (See [here](https://docs.docker.com/compose/install/))
+ - Docker and Docker compose should be installed. (See [here](https://docs.docker.com/compose/install/) for more info)
 
-### Steps to run the folder
+### Steps to run the project
 
 - Clone this project
 - Create a free API key by creating a new account in EtherScan through this [link](https://docs.etherscan.io/getting-started/creating-an-account)
@@ -63,13 +64,13 @@ This application uses Gas Tracker APIs offered by Etherscan to periodically get 
 - Run the project with the following command  
    `docker-compose up -d --build`
 
- _Other environment variables in `docker-compose.yml` file can also be passed the same the API key was passed._
+ _Other environment variables in `docker-compose.yml` file can also be passed the same way the API key was passed._
  
  ## Technical Choices made in the application
  
  ### Choosing a Data Source
  
- EtherScan and EtherGas station are two famous sources of data for extracting gas fees. Ou of them I have chosen to use EtherScan in this application due to the following reasons
+ EtherScan and EtherGas station are the two famous sources of data for extracting gas fees. Out of them I have chosen to use EtherScan in this application due to the following reasons
  - EtherScan documentation is very clear.
  - EtherScan would be the ideal data source if I were to improve this application in the future by adding more functionality, becuase it provides many endpoints for different uses. On the other hand EtherGasStation has only one endpoint.
 

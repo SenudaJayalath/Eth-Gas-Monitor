@@ -56,7 +56,7 @@ This application uses Gas Tracker APIs offered by Etherscan to periodically get 
  
  EtherScan and EtherGas station are two famous sources of data for extracting gas fees. Ou of them I have chosen to use EtherScan in this application due to the following reasons
  - EtherScan documentation is very clear.
- - EtherScan would be the ideal data source if I were to improve this application in the future by adding more functionality, becuase it provides many endpoints for different uses. On the other hand EtherGasStation has one endpoint.
+ - EtherScan would be the ideal data source if I were to improve this application in the future by adding more functionality, becuase it provides many endpoints for different uses. On the other hand EtherGasStation has only one endpoint.
 
 ### Choosing a  Database
 
